@@ -9,29 +9,13 @@ dwarves = %w[
 ]
 
 
-# http://ruby-doc.org/core-2.1.0/Enumerable.html#method-i-each_with_index
 def roll_call_dwarves(dwarves)
   dwarves.each_with_index do |dwarf, index|
     puts "#{index + 1}. #{dwarf}"
   end
 end
 
-roll_call_dwarves(dwarves)
 
-# Give the planeteer calls some heart!
-#
-# The summon_captain_planet method should return a new array of values for each
-# of the values in the `planeteer_calls` variable. Each value in the new array
-# should be capitalized and have an exclamation point:
-#
-# earth -> Earth!
-#
-# Use the "map" method (aka the "collection" method):
-# http://ruby-doc.org/core-2.1.0/Enumerable.html#method-i-map
-
-planeteer_calls = %w[earth wind fire water heart]
-
-# Expected return value: ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.map { |call| call.capitalize + '!' }
 end
