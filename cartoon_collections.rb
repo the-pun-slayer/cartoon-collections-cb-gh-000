@@ -6,7 +6,7 @@ dwarves = [
             Sneezy,
             Sleepy,
             Happy,
-]
+          ]
 
 
 def roll_call_dwarves(dwarves)
